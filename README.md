@@ -1,6 +1,8 @@
 # TinyRoute
 Tiny Route is a URL shortening service that allows users to convert long URLs into short, easy-to-share 
 
+![Project Desktop](./resources/previews/desktop.png)
+![Project Mobile](./resources/previews/mobile.png)
 
 ## Project Structure
 ```
