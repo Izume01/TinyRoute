@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Zeyada&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    background-color: #f5f5f5;
+
+}
+
+.container .left_side-text-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+}
+
+.container .left_side-text-Container p {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    ;
+}
+
+.container .main-short-link-container {
+    display: flex;
+    justify-content: center;
+    /*align-items: center;
+    */flex-direction: column;
+    width: 50%;
+    height: 100vh;
+
+}
+
+.container-short {
+    width: 70%;
+    background-color: white;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.link-card {
+    width: calc(100% - 40px);
+    padding: 70px;
+    border: 1px dashed lightgray;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.link-card:hover {
+    background-color: #f1f1f1;
+}
+
+.link-card p {
+    font-size: 1.5rem;
+    color: black;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.link-card span {
+    display: block;
+    font-size: 14px;
+    color: gray;
+    margin-top: 8px;
+}
+
+.container-short {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+.container-short .logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.container-short h1 {
+    font-family: "Abril Fatface", serif;
+    font-size: 2.5rem;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+form input {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+form button {
+    width: 100%;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    color: #FFEBEE;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background: radial-gradient(circle at 20% 30%, rgba(255, 99, 132, 0.8), transparent 30%),    radial-gradient(circle at 80% 40%, rgba(54, 162, 235, 0.8), transparent 35%),    radial-gradient(circle at 50% 70%, rgba(255, 206, 86, 0.8), transparent 40%);
+    background-size: 200% 200%;
+    transition: background-position 0.5s ease;
+    -webkit-transition: background-position 0.5s ease;
+    -moz-transition: background-position 0.5s ease;
+    -ms-transition: background-position 0.5s ease;
+    -o-transition: background-position 0.5s ease;
+}
+
+button:hover {
+    background-position: 100% 100%;
+}
+
+.footer {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    text-align: center;
+  
+    padding: 15px ;
+    padding-top: 25px;
+}

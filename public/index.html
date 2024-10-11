@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiny Route</title>
     <link rel="stylesheet" href="/public/css/style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="left_side-text-Container">
@@ -14,16 +16,28 @@
         </div>
 
         <div class="main-short-link-container">
-             <!-- <img src="/resources/images/logo.jpeg" alt=""> -->
+            <div class="container-short">
+                <img class="logo" src="/resources/images/transparent-logo.png" alt="">
 
-            <form action="/shorten" method="POST">
-                <input type="text" name="url" placeholder="Paste your link here" required>
-                <button type="submit">Shorten it </button>
-            </form>
+                <h1 class="website-name-logo">
+                    Tiny Route
+                </h1>
+                <form action="/shorten" method="POST">
+                    <input type="text" name="url" placeholder="Paste your link here" required>
+                    <button type="submit">Shorten it </button>
+                </form>
 
+                <div class="link-card" onclick="copyToClickBoard()">
+                    <p class="short-link">www.google.com</p>
+                    <span>Click to copy.</span>
+                </div>
 
-
+                <div class="footer">
+                    <p>Build With ❤️</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
