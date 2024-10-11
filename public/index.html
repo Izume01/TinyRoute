@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Route</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left_side-text-Container">
+            <p>Got a long, messy link?</p>
+            <p>Paste it here, and make it short and sweet.</p>
+        </div>
+
+        <div class="main-short-link-container">
+             <!-- <img src="/resources/images/logo.jpeg" alt=""> -->
+
+            <form action="/shorten" method="POST">
+                <input type="text" name="url" placeholder="Paste your link here" required>
+                <button type="submit">Shorten it </button>
+            </form>
+
+
+
+        </div>
+    </div>
+</body>
+</html>
