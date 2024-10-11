@@ -22,12 +22,12 @@
                 <h1 class="website-name-logo">
                     Tiny Route
                 </h1>
-                <form action="/shorten" method="POST">
-                    <input type="text" name="url" placeholder="Paste your link here" required>
-                    <button type="submit">Shorten it </button>
+                <form id="shortenForm">
+                    <input class="originalUrl" type="text" name="url" placeholder="Paste your link here" required>
+                    <button class="short-btn" type="submit">Shorten it </button>
                 </form>
 
-                <div class="link-card" onclick="copyToClickBoard()">
+                <div class="link-card">
                     <p class="short-link">www.google.com</p>
                     <span>Click to copy.</span>
                 </div>

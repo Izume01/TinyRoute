@@ -3,6 +3,7 @@ import { GenerateRandomString } from '../util/slugGenerator.js'; // Import Gener
 
 // Function to create a new short URL
 const CreateShortUrl = async (req, res) => {
+    console.log('Request body:', req.body); // Add this line for debugging
     const { originalUrl } = req.body;
     if (!originalUrl) {
         return res.status(400).json({ message: "originalUrl is required" });
