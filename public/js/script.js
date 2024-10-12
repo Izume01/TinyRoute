@@ -15,7 +15,7 @@ form.addEventListener('submit', async (e) => {
     }
 
     try {
-        const response = await fetch('http://localhost:8000/api/shorten', {
+        const response = await fetch('/api/shorten', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

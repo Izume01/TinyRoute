@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/3d847107-80ab-4179-87dc-6ff8a993c844/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/TinyRoute",
+    "appService.deploySubpath": "."
+}

@@ -19,6 +19,7 @@ const CreateShortUrl = async (req, res) => {
         await newUrl.save();
         res.status(201).json({ slug });
     } catch (error) {
+        console.error('Error saving new URL:', error); // Log the error details
         res.status(500).json({ message: error.message });
     }
 };
@@ -33,6 +34,7 @@ const GetOriginalUrl = async (req, res) => {
             res.status(404).json({ message: "URL not found" });
         }
     } catch (error) {
+        console.error('Error retrieving URL:', error); // Log the error details
         res.status(500).json({ error: 'Server error' }); // Handle server errors
     }
 };
