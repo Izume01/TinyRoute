@@ -5,7 +5,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import connectDB from './connectDB.js';
 import urlRoutes from './routes/urlRoutes.js';
-
+import auth from './routes/auth.js';
 dotenv.config();
 
 const app = express();
@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
 
 // Add the URL routes to the app
 app.use('/api', urlRoutes);
-
+app.use('/auth', auth);
 app.listen(port, () => {
     console.log(`Server started on port ${port}`);
 });
