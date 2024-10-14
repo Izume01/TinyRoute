@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body , html {
+    height: 100%;
+    width: 100%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 460px;
+    width: 550px;
+    padding: 40px;
+    background-color: #fff;
+    border: 2px dotted #ccc;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding-top: 50px;
+}
+
+.container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+form {
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-grp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.container button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.input-grp input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-grp label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.input-grp input:focus {
+    outline: none;
+}
+
+.container button:hover {
+    background-color: #383838;
+    color: white;
+}
+
+.container button:active {
+    background-color: #000000;
+    color: white;
+}
+
+.container button:focus {
+    outline: none;
+}
+
+.redirect-login {
+    text-align: end;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: sans-serif;
+    padding-right: 5px;
+}
+
+.signup-text {
+    text-align: center;
+}
