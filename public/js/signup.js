@@ -16,6 +16,7 @@ RegistrationSumbitbtn.addEventListener('click' , async (e)=> {
     }
 
     try {
+
         const response = await fetch('http://localhost:8000/auth/register' ,{
             method: 'POST',
             headers: {
@@ -24,16 +25,17 @@ RegistrationSumbitbtn.addEventListener('click' , async (e)=> {
             body: JSON.stringify({
                 name : username,
                 email,
-                password
+                password,
             })
         })
 
         if (!response.ok) {
             const errorData = await response.json();
-            throw new Error(errorData.message || 'Login failed'); // Throw an error for non-200 responses
+            throw new Error(errorData.message || 'Login failed'); 
         }
         const data = await response.json();
-
+        localStorage.setItem('sessionId', data.sessionId);
+        window.location.href = 'login.html';        
     } catch (error) {
         console.log(error);
     }

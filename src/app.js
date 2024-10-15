@@ -24,17 +24,22 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 
-// Serve static files from the "public" directory
-app.use(express.static(path.join(__dirname, '../public'))); // Serve public files
-// Serve static files from the "resources" directory
-app.use('/resources', express.static(path.join(__dirname, '../resources'))); // Serve resources files
+app.use(express.static(path.join(__dirname, '../public'))); 
+app.use('/resources', express.static(path.join(__dirname, '../resources')));
 
-// Serve the index.html file at the root URL
+
+
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public', 'index.html')); // Adjusted path
 });
+app.get('/login', (req, res) => {
+    res.sendFile(path.join(__dirname, '../public', 'login.html')); // Adjusted path
+});
+app.get('/sigup', (req, res) => {
+    res.sendFile(path.join(__dirname, '../public', 'signup.html')); // Adjusted path
+});
 
-// Add the URL routes to the app
+
 app.use('/api', urlRoutes);
 app.use('/auth', auth);
 app.listen(port, () => {
