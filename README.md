@@ -6,29 +6,45 @@ Tiny Route is a URL shortening service that allows users to convert long URLs in
 
 ## Project Structure
 ```
-.env
-.gitignore
-package.json
-public/
-    css/
-        style.css
-    index.html
-    js/
-        script.js
-README.md
-resources/
-    images/
-src/
-    app.js
-    connectDB.js
-    controller/
-        urlController.js
-    model/
-        url.js
-    routes/
-        urlRoutes.js
-    util/
-        slugGenerator.js
+TinyRoute
+├── public
+|   ├── css
+|   |   ├── login.css
+|   |   ├── signup.css
+|   |   └── style.css
+|   ├── js
+|   |   ├── login.js
+|   |   ├── signup.js
+|   |   └── script.js
+|   ├── index.html
+|   ├── login.html
+|   └── signup.html
+├── resources
+|   ├── images
+|   |   └── logo.png
+|   └── previews
+|       ├── mobile.png
+|       └── desktop.png
+├── src
+|   ├── controller
+|   |   ├── AuthController.js
+|   |   └── urlController.js
+|   ├── middleware
+|   |   └── loginCheck.js
+|   ├── model
+|   |   ├── url.js
+|   |   └── user.js
+|   ├── routes
+|   |   ├── auth.js
+|   |   └── urlRoute.js
+|   ├── util
+|   |   ├── generateSessionId.js
+|   |   └── slugGenerator.js
+|   ├── app.js
+|   └── connectDB.js
+├── .env
+├── .gitignore
+└── package.json
 ```
 
 
