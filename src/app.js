@@ -6,6 +6,8 @@ import { fileURLToPath } from 'url';
 import connectDB from './connectDB.js';
 import urlRoutes from './routes/urlRoutes.js';
 import auth from './routes/auth.js';
+import { LoginCheck } from './middleware/loginCheck.js';
+
 dotenv.config();
 
 const app = express();
@@ -15,7 +17,6 @@ console.log(dbUrl);
 
 connectDB(dbUrl);
 
-// Get the current directory name equivalent to __dirname
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -29,7 +30,7 @@ app.use('/resources', express.static(path.join(__dirname, '../resources')));
 
 
 
-app.get('/', (req, res) => {
+app.get('/' ,(req, res) => {
     res.sendFile(path.join(__dirname, '../public', 'index.html')); // Adjusted path
 });
 app.get('/login', (req, res) => {
