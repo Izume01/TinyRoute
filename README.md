@@ -1,4 +1,4 @@
-# TinyRoute
+*# TinyRoute
 Tiny Route is a URL shortening service that allows users to convert long URLs into short, easy-to-share 
 
 ![Project Desktop](./resources/previews/desktop.png)
@@ -6,29 +6,45 @@ Tiny Route is a URL shortening service that allows users to convert long URLs in
 
 ## Project Structure
 ```
-.env
-.gitignore
-package.json
-public/
-    css/
-        style.css
-    index.html
-    js/
-        script.js
-README.md
-resources/
-    images/
-src/
-    app.js
-    connectDB.js
-    controller/
-        urlController.js
-    model/
-        url.js
-    routes/
-        urlRoutes.js
-    util/
-        slugGenerator.js
+TinyRoute
+├── public
+|   ├── css
+|   |   ├── login.css
+|   |   ├── signup.css
+|   |   └── style.css
+|   ├── js
+|   |   ├── login.js
+|   |   ├── signup.js
+|   |   └── script.js
+|   ├── index.html
+|   ├── login.html
+|   └── signup.html
+├── resources
+|   ├── images
+|   |   └── logo.png
+|   └── previews
+|       ├── mobile.png
+|       └── desktop.png
+├── src
+|   ├── controller
+|   |   ├── AuthController.js
+|   |   └── urlController.js
+|   ├── middleware
+|   |   └── loginCheck.js
+|   ├── model
+|   |   ├── url.js
+|   |   └── user.js
+|   ├── routes
+|   |   ├── auth.js
+|   |   └── urlRoute.js
+|   ├── util
+|   |   ├── generateSessionId.js
+|   |   └── slugGenerator.js
+|   ├── app.js
+|   └── connectDB.js
+├── .env
+├── .gitignore
+└── package.json
 ```
 
 
@@ -104,3 +120,4 @@ This project is licensed under the MIT License.
 You can save this content as a `.md` file, such as `README.md`. Let me know if you need any adjustments!
 ```
 
+*
